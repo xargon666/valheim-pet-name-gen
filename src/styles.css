@@ -44,7 +44,7 @@ html,body{
 h2 {
     font-family: "MedievalSharp", serif;
     font-size: 2rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.904);
     text-shadow: 2px 2px 2px black;
 }
 
@@ -81,9 +81,9 @@ h2 {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #EFBF2E,
-            0 0 30px #EFBF2E, 0 0 40px #EFBF2E, 0 0 50px #EFBF2E,
-            0 0 60px #EFBF2E;
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 15px #EFBF2E,
+            0 0 25px #EFBF2E, 0 0 35px #EFBF2E, 0 0 45px #EFBF2E,
+            0 0 55px #EFBF2E;
     }
     to {
         text-shadow: 0 0 10px #fff, 0 0 20px #EFBF2E, 0 0 30px #EFBF2E,
