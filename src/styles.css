@@ -46,11 +46,12 @@ h2 {
 }
 
 .button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    margin-top: 3rem;
-    opacity: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:400px;
+    height:200px;
+    /* margin-top: 3rem; */
 }
 
 .top {
@@ -100,30 +101,55 @@ Button {
   font-weight: 600;
   font-size: 18px;
   padding: 0 18px;
-  line-height: 50px;
+  line-height: 3rem;
   text-align: center;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  opacity:100%;
 }
 
 .btn:hover {
   background-color: #fff;
-  opacity:100%;
 }
 
 .btn:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
-  opacity:100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 900px) {
   .btn {
     min-width: 120px;
     padding: 0 25px;
-    opacity:100%;
+    font-size:16px;
+    margin-bottom:1rem;
+}
+
+  .panel {
+    width:100%;
+    border-radius: 0;
   }
+
+  .button-grid {
+    margin-top:2rem;
+    flex-direction:column;
+    height:auto;
+  }
+
+  .logo{
+    min-width:90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 580px) {
+    h2{font-size: 1.5rem;}
+}
+
+@media (max-width: 450px) {
+    h2{font-size: 1.2rem;}
 }
