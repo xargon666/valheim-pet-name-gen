@@ -9,7 +9,7 @@
     background-image: URL("/bg.jpg");
     background-size: cover;
     width: auto;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .panel {
