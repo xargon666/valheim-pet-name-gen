@@ -6,7 +6,7 @@
 }
 
 .main {
-    background-image: URL("./assets/images/bg.jpg");
+    background-image: URL("/bg.jpg");
     background-size: cover;
     width: auto;
     height: 100vh;
