@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=MedievalSharp&family=Poppins:wght@400;600&family=Quantico:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: URL("./assets/images/bg.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+.panel {
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(27, 19, 19, 0.925);
+    height: 75vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panel > span {
+    font-family: "MedievalSharp", serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "MedievalSharp", serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.logo {
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom:1.2rem;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    margin-top: 3rem;
+    opacity: 100%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #EFBF2E,
+            0 0 30px #EFBF2E, 0 0 40px #EFBF2E, 0 0 50px #EFBF2E,
+            0 0 60px #EFBF2E;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #EFBF2E, 0 0 30px #EFBF2E,
+            0 0 40px #EFBF2E, 0 0 50px #EFBF2E, 0 0 60px #EFBF2E,
+            0 0 70px #EFBF2E;
+    }
+}
+
+Button {
+    padding: 0.5rem;
+}
+
+
+/* CSS */
+.btn {
+  opacity:100%;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  opacity:100%;
+}
+
+.btn:hover {
+  background-color: #fff;
+  opacity:100%;
+}
+
+.btn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+  opacity:100%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 120px;
+    padding: 0 25px;
+    opacity:100%;
+  }
+}
