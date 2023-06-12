@@ -9,7 +9,7 @@
     background-image: URL("/bg.jpg");
     background-size: cover;
     width: auto;
-    height: 100dvh;
+    height: 100svh;
 }
 
 .panel {
@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 560px;
 }
 
 .panel > span {
