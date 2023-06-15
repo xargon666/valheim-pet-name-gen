@@ -15,10 +15,10 @@ Visit the deployed app [here](https://valheim-pet-name-gen.netlify.app)
 
 ## Development
 ### Local Development Instructions
-1. Clone this repo
-2. cd 'valheim-pet-name-gen'
-3. npm i
-4. npm run dev
+1. Clone the repo: `git clone https://github.com/xargon666/valheim-pet-name-gen.git`
+2. `cd 'valheim-pet-name-gen'`
+3. `npm i`
+4. `npm run dev`
 
 ### Testing
 Run any of the following to produce different testing reports:
