@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import valheimLogo from "./images/logo.webp";
 function App() {
     const petNames = [
+        "Tom",
         "Buddy",
         "Max",
         "Charlie",
@@ -129,15 +130,16 @@ function App() {
                     <img className="logo" src={valheimLogo} alt="logo"></img>
                     <h2>Generate a Random Pet Name</h2>
                 </div>
-                <span className="glow">{petName}</span>
+                <span id="pet-name" className="glow">{petName}</span>
                 <div className="button-grid">
                     <Button
-                        variant='primary'
+                        id="generate-btn"
                         onClick={() => handleOnClick()}
                     >
                         Generate Name
                     </Button>
                     <Button
+                        id="copy-btn"
                         onClick={() => handleCopy()}
                     >
                         {buttonText}

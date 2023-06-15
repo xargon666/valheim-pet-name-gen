@@ -8,6 +8,7 @@ interface Props {
   size?: string, // sm, md, lg
   disabled?: boolean;
   className?:string;
+  id?:string;
 }
 
 // button component, consuming props
@@ -16,10 +17,12 @@ const Button: React.FC<Props> = ({
   onClick,
   variant = 'default',
   disabled,
+  id,
   ...rest
 }) => {
   return (
     <button
+      id={`${id}`}
       className={'btn'}
       onClick={onClick}
       {...rest}
