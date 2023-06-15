@@ -1,5 +1,5 @@
 # Valheim Pet Name Generator Project
-A quick solo project SPA for generating random pet names, created in about 3 hours complete with simple unit tests.
+A quick solo SPA project for generating random pet names, created in about 3 hours complete with simple unit tests.
 
 Visit the deployed app [here](https://valheim-pet-name-gen.netlify.app)
 
